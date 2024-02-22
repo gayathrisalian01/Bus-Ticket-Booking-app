@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:backgroundTint="@color/colorPrimary"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".busselection"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="310dp"
+        android:background="@drawable/top_view_curve"
+        android:backgroundTint="@color/purple">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="30dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/back"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imgFilter"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_marginTop="13dp"
+            android:layout_marginEnd="15dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/filter_1159884"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="146dp"
+            android:layout_height="155dp"
+            android:layout_marginTop="40dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/busicon"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/quando_regular"
+            android:text="Select your bus!"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView9" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView"
+            android:orientation="horizontal"
+            android:weightSum="100"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/txtfrom"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="45"
+                android:fontFamily="@font/quando_regular"
+                android:text="Pune"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="10"
+                android:src="@drawable/ic_swap_horiz_white_24dp" />
+
+            <TextView
+                android:id="@+id/txtto"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="45"
+                android:fontFamily="@font/quando_regular"
+                android:text="Mumbai"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txtdate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linearLayout"
+            android:fontFamily="@font/quando_regular"
+            android:text="08 - Oct - 2023 "
+            android:layout_marginTop="10dp"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ListView
+                android:id="@+id/busListView"
+                android:clickable="true"
+                android:focusable="true"
+                android:layout_margin="5dp"
+                android:choiceMode="none"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:dividerHeight="5dp"
+                app:layout_constraintStart_toStartOf="parent"
+                />
+
+
+</LinearLayout >

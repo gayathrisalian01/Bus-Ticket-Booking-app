@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/registerLayout"
+    tools:context=".RegisterActivity">
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:background="@drawable/top_view_curve"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        android:backgroundTint="@color/purple">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:fontFamily="@font/courgette_regular"
+            android:text="Go Bus"
+            android:textColor="@color/white"
+            android:textSize="40dp" />
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:src="@drawable/busicon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/quando_regular"
+            android:text="Create Your Account"
+            android:textSize="18sp"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/whiteLayout"
+        android:layout_width="match_parent"
+        android:layout_height="380dp"
+        android:paddingTop="20dp"
+        android:layout_marginTop="350dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/usernameEditText"
+            android:layout_marginTop="10dp"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:drawableLeft="@drawable/baseline_person_24"
+            android:drawablePadding="10dp"
+            android:fontFamily="@font/quando_regular"
+            android:hint="Name"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/phoneEditText"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:drawableLeft="@drawable/baseline_call_24"
+            android:drawablePadding="10dp"
+            android:fontFamily="@font/quando_regular"
+            android:hint="Contact Number"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/emailEditText"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:drawableLeft="@drawable/outline_email_24"
+            android:drawablePadding="10dp"
+            android:fontFamily="@font/quando_regular"
+            android:hint="Email-Id"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/passwordEditText"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:drawableLeft="@drawable/outline_lock_24"
+            android:drawablePadding="10dp"
+            android:fontFamily="@font/quando_regular"
+            android:hint="Password"
+            android:inputType="textPassword"
+             />
+        <ImageView
+            android:id="@+id/passview"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/password_visibility_off"
+            android:layout_marginTop="-37dp"
+            android:layout_marginLeft="289dp"/>
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/registerButton"
+            android:layout_width="150dp"
+            android:fontFamily="@font/quando_regular"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:layout_gravity="center"
+            android:layout_marginTop="35dp"
+            android:background="@drawable/custom_button"
+            android:textColor="@color/white"
+            android:text="Register" />
+
+    </LinearLayout>
+
+</RelativeLayout>

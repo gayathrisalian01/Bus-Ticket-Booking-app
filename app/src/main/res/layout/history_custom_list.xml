@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="6dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical"
+        android:backgroundTint="@color/grey"
+        android:background="@drawable/button_curve_hist">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0900hrs-1300hrs"
+            android:fontFamily="@font/quando_regular"
+            android:layout_marginLeft="15dp"
+            android:textSize="12dp"
+            android:id="@+id/lstTime"
+            android:layout_marginTop="15dp"
+            style="@style/Text"/>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/lsttravellersName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/cabin"
+                android:text="Rashmi Kumar"
+                android:textStyle="bold"
+                android:layout_marginLeft="15dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                style="@style/Text"/>
+
+            <TextView
+                android:id="@+id/lstseatNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/quando_regular"
+                android:text="Seat No: 4"
+                android:layout_marginRight="15dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                style="@style/Text"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/lstTravelsName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/cabin"
+                android:text="RESHMA TOURS AND TRAVELS"
+                android:textStyle="bold"
+                android:layout_marginLeft="15dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                style="@style/Text"/>
+
+            <TextView
+                android:id="@+id/lstPaid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/quando_regular"
+                android:text=""
+                android:layout_marginRight="30dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/lstFrom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:fontFamily="@font/cabin"
+                android:text="From: Udupi"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                style="@style/Text"/>
+
+            <TextView
+                android:id="@+id/lstTo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="36dp"
+                android:fontFamily="@font/cabin"
+                android:text="To: Mangalore"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/lstFrom"
+                app:layout_constraintTop_toTopOf="parent"
+                style="@style/Text"/>
+
+            <TextView
+                android:id="@+id/lstPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/quando_regular"
+                android:text="980"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginRight="15dp"
+                style="@style/Text"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/lstDuration"
+            android:fontFamily="@font/quando_regular"
+            android:layout_marginLeft="15dp"
+            android:text="4 hours"
+            android:textSize="11dp"
+            style="@style/Text"/>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="NON-AC SLEEPER"
+                android:fontFamily="@font/cabin"
+                android:textStyle="bold"
+                android:layout_marginBottom="15dp"
+                android:id="@+id/lstType"
+                android:textSize="12dp"
+                android:layout_marginLeft="15dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                style="@style/Text"/>
+
+            <TextView
+                android:id="@+id/lstDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="13-July-2023"
+                android:fontFamily="@font/quando_regular"
+                android:textStyle="bold"
+                android:textSize="13dp"
+                android:layout_marginRight="15dp"
+
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                style="@style/Text"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

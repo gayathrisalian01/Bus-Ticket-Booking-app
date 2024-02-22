@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="CustomSpinnerStyle">
+        <item name="android:background">@drawable/custom_spinner_background</item>
+        <item name="android:textAppearance">@style/CustomSpinnerTextAppearance</item>
+        <item name="android:popupBackground">@color/white</item> <!-- Background for the dropdown -->
+        <item name="android:dropDownSelector">@color/white</item><!-- Selector color for the dropdown items -->
+        <item name="android:popupElevation">0dp</item> <!-- Remove elevation to avoid shadow -->
+    </style>
+
+
+    <style name="CustomSpinnerTextAppearance">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">20sp</item> <!-- Adjust the text size as needed -->
+    </style>
+
+
+    <!-- Gayatris styles -->
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="AppTheme.Toolbar" parent="ThemeOverlay.AppCompat.ActionBar" />
+</resources>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:weightSum="100"
+    android:padding="12dp"
+    android:backgroundTint="@color/cardview_light_background">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="60"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/lstTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/quando_regular"
+            android:text="3:00PM - 5:45PM"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/lstTravelsName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:fontFamily="@font/quando_regular"
+            android:text="Travelo service"
+            android:textColor="#4b4b4b"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/lstType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/quando_regular"
+            android:text="A/C Sleeper (2+2)"
+            android:textColor="#8a8a8a" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="40"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/lstPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/quando_regular"
+            android:text="₹1955"
+            android:textAlignment="textEnd"
+            android:textColor="#f5a622"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/lstDuration"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            android:fontFamily="@font/quando_regular"
+            android:text="2.45 Hour"
+            android:textAlignment="textEnd"
+            android:textColor="#b3b3b3" />
+    </LinearLayout>
+
+</LinearLayout>

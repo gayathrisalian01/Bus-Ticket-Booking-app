@@ -1,0 +1,15 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Top square corners -->
+    <item android:id="@android:id/background">
+        <shape>
+            <corners android:topLeftRadius="0dp" android:topRightRadius="0dp" android:bottomLeftRadius="10dp" android:bottomRightRadius="10dp" />
+            <solid android:color="@color/white" />
+        </shape>
+    </item>
+    <item android:id="@android:id/content">
+        <!-- Create a transparent inner circle for the image to show through -->
+        <shape android:shape="oval">
+            <solid android:color="@android:color/transparent" />
+        </shape>
+    </item>
+</layer-list>

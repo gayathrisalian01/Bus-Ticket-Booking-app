@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".settingsActivity"
+    android:id="@+id/settingLayout"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        android:background="@color/purple">
+
+        <ImageView
+            android:id="@+id/imagesetting"
+            android:layout_width="30dp"
+            android:layout_height="40dp"
+            android:contentDescription="Settings"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/baseline_arrow_back_24">
+        </ImageView>
+
+        <TextView
+            android:id="@+id/textsetting"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:text="Settings"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/quando_regular"
+            android:layout_marginLeft="20dp"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp"
+            android:layout_marginBottom="10dp">
+        </TextView>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_margin="10dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+
+        <TextView
+            android:id="@+id/nameperson"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hey! Vivek Sharma"
+            android:fontFamily="@font/quando_regular"
+            android:textStyle="bold"
+            android:layout_marginTop="2dp"
+            android:textSize="30dp"
+            style="@style/Text">
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:theme="@style/SCREEN"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+
+
+        <ImageView
+            android:id="@+id/darkmode"
+            android:layout_width="50dp"
+            android:layout_height="28dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/dark_mode"
+            style="@style/Vector">
+        </ImageView>
+
+        <TextView
+            android:id="@+id/texttoggle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="Dark Mode"
+            android:fontFamily="@font/quando_regular"
+            android:textSize="20sp"
+            android:layout_marginLeft="-5dp">
+        </TextView>
+
+        <Switch
+
+            android:id="@+id/themeSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="107dp"
+            android:checked="false"
+            style="@style/Vector"
+            android:layout_marginTop="10dp">
+
+        </Switch>
+
+
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/quando_regular"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="20dp"
+            android:text="Profile"
+            android:textSize="20dp">
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/editLayout"
+        android:theme="@style/SCREEN"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+
+        <!-- First Photo -->
+        <ImageView
+            android:id="@+id/editpen"
+            android:layout_width="45dp"
+            android:layout_height="30dp"
+            android:src="@drawable/baseline_edit_24"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="20dp"
+            style="@style/Vector">
+        </ImageView>
+
+        <!-- Text -->
+        <TextView
+            android:id="@+id/edittext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
+            android:text="Edit Your Profile"
+            android:fontFamily="@font/quando_regular"
+            android:textSize="20sp">
+        </TextView>
+
+        <!-- Second Photo -->
+
+        <ImageView
+            android:id="@+id/editarrow"
+            android:layout_width="50dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="10dp"
+            android:contentDescription="Image 2"
+            android:src="@drawable/baseline_arrow_forward_ios_24"
+            style="@style/Vector">
+        </ImageView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="History"
+            android:fontFamily="@font/quando_regular"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="20dp"
+            android:textSize="20sp">
+        </TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/historyLayout"
+        android:theme="@style/SCREEN"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+
+        <!-- First Photo -->
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/baseline_directions_bus_24"
+            style="@style/Vector">
+        </ImageView>
+
+        <!-- Text -->
+        <TextView
+            android:id="@+id/busp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
+            android:text="Travel History"
+            android:fontFamily="@font/quando_regular"
+            android:textSize="20sp" >
+        </TextView>
+
+        <!-- Second Photo -->
+        <ImageView
+            android:id="@+id/busarrowp"
+            android:layout_width="50dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="75dp"
+            android:layout_marginRight="10dp"
+            android:contentDescription="Image 2"
+            android:src="@drawable/baseline_arrow_forward_ios_24"
+            style="@style/Vector">
+        </ImageView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:id="@+id/deleteLayout"
+        android:orientation="horizontal"
+        android:theme="@style/SCREEN">
+
+        <!-- First Photo -->
+        <ImageView
+            android:id="@+id/delicon"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:src="@drawable/baseline_delete_24"
+            android:layout_marginTop="7dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="20dp"
+            style="@style/Vector">
+        </ImageView>
+
+
+
+        <!-- Text -->
+
+        <TextView
+            android:id="@+id/delhis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/quando_regular"
+            android:layout_marginTop="12dp"
+            android:text="Delete History"
+            android:textSize="20sp">
+        </TextView>
+
+
+        <!-- Second Photo -->
+        <ImageView
+            android:id="@+id/arrowdel"
+            android:layout_width="50dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="75dp"
+            android:layout_marginRight="10dp"
+            android:contentDescription="Image 2"
+            android:src="@drawable/baseline_arrow_forward_ios_24"
+            style="@style/Vector">
+        </ImageView>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Log Out"
+            android:fontFamily="@font/quando_regular"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="20dp"
+            android:textSize="20dp">
+        </TextView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="10dp"
+        android:id="@+id/logOutLayout"
+        android:orientation="horizontal"
+        android:theme="@style/SCREEN">
+
+        <!-- First Photo -->
+        <ImageView
+            android:id="@+id/log"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:src="@drawable/baseline_logout_24"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="20dp"
+            style="@style/Vector">
+
+        </ImageView>
+
+        <!-- Text -->
+        <TextView
+            android:id="@+id/textlog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
+            android:fontFamily="@font/quando_regular"
+            android:text="Log Out"
+            android:textSize="20sp">
+        </TextView>
+    </LinearLayout>
+</LinearLayout>

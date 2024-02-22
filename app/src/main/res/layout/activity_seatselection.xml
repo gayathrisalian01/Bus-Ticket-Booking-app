@@ -1,0 +1,1010 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".seatselection"
+    android:id="@+id/CL">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:popupTheme="@style/AppTheme.PopupOverlay"
+        app:theme="@style/AppTheme.Toolbar">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/ic_arrow_back_white_24dp" />
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="-16dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+               >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="260dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/top_view_curve_purple"
+                        />
+                    <ImageView
+                        android:id="@+id/btnBack"
+                        android:layout_width="30dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="15dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/back" />
+
+                    <TextView
+                        android:id="@+id/textV"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="40dp"
+                        android:fontFamily="@font/quando_regular"
+                        android:text="Select your seat!"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18sp" />
+                    <LinearLayout
+                        android:id="@+id/linearLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textV"
+                        android:layout_marginTop="8dp"
+                        android:orientation="horizontal"
+                        android:weightSum="100">
+
+                        <TextView
+                            android:id="@+id/txtfrom"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="45"
+                            android:fontFamily="@font/quando_regular"
+                            android:text="Pune"
+                            android:textAlignment="center"
+                            android:textColor="#FFFFFF"
+                            android:textSize="18sp" />
+
+                        <ImageView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_weight="10"
+                            android:src="@drawable/ic_swap_horiz_white_24dp" />
+
+                        <TextView
+                            android:id="@+id/txtto"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="45"
+                            android:fontFamily="@font/quando_regular"
+                            android:text="Mumbai"
+                            android:textAlignment="center"
+                            android:textColor="#FFFFFF"
+                            android:textSize="18sp" />
+
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:id="@+id/textdate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/linearLayout"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="@font/quando_regular"
+                        android:text="08th - Oct - 2023 | Tuesday"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18sp" />
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cardView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/textdate"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="24dp"
+                        android:layout_marginRight="8dp"
+                        android:clickable="true"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        app:cardCornerRadius="4dp"
+                        app:cardUseCompatPadding="true"
+                        app:contentPadding="16dp"
+                        android:focusable="true">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="100">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="60"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/txttime"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/quando_regular"
+                                    android:text="9:00AM - 12:30PM"
+                                    style="@style/Text"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/txtname"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="4dp"
+                                    android:layout_marginBottom="4dp"
+                                    android:fontFamily="@font/quando_regular"
+                                    android:text="Expo bus service"
+                                    style="@style/Text"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/txttype"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/quando_regular"
+                                    android:text="A/C Sleeper (2+2)"
+                                    style="@style/Text" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="40"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/txtprice"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/quando_regular"
+                                    android:text="₹1960"
+                                    android:textAlignment="textEnd"
+                                    android:textColor="#f5a622"
+                                    android:textSize="24sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/txtduration"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="4dp"
+                                    android:layout_marginBottom="4dp"
+                                    android:fontFamily="@font/quando_regular"
+                                    android:text="3.30 Hour"
+                                    android:textAlignment="textEnd"
+                                    style="@style/Text" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                </RelativeLayout>
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginRight="8dp"
+                    app:cardCornerRadius="4dp"
+                    app:cardUseCompatPadding="true"
+                    app:contentPadding="8dp">
+
+//kjbhkawdha nwabchnmsa chnasbc
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginBottom="16dp"
+                            android:orientation="horizontal"
+                            android:weightSum="100">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="33.3"
+                                android:gravity="center">
+
+                                <ImageView
+                                    android:layout_width="16dp"
+                                    android:layout_height="16dp"
+                                    android:layout_marginEnd="4dp"
+                                    android:src="@drawable/booked_img" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/quando_regular"
+                                    android:text="Booked"
+                                    android:textAlignment="center"
+                                    style="@style/Text" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="33.3"
+                                android:gravity="center">
+
+                                <ImageView
+                                    android:layout_width="16dp"
+                                    android:layout_height="16dp"
+                                    android:layout_marginEnd="4dp"
+                                    android:src="@drawable/available_img" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/quando_regular"
+                                    android:text="Available"
+                                    android:textAlignment="center"
+                                    style="@style/Text" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="33.3"
+                                android:gravity="center">
+
+                                <ImageView
+                                    android:layout_width="16dp"
+                                    android:layout_height="16dp"
+                                    android:layout_marginEnd="4dp"
+                                    android:src="@drawable/your_seat_img" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/quando_regular"
+                                    android:text="Your Seat"
+                                    android:textAlignment="center"
+                                    style="@style/Text" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="4dp"
+                            android:layout_weight="100"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="50"
+                                android:gravity="center">
+
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginEnd="16dp"
+                                    android:fontFamily="@font/quando_regular"
+                                    android:text="1"
+                                    android:textColor="#c3c3c3"
+                                    android:textSize="18sp"
+                                    android:textStyle="bold"
+                                    android:visibility="invisible" />
+
+                                <TextView
+                                    android:layout_width="36dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginEnd="4dp"
+                                    android:fontFamily="@font/quando_regular"
+                                    android:text="A"
+                                    android:textAlignment="center"
+                                    android:textColor="#c3c3c3"
+                                    android:textSize="18sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="36dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="4dp"
+                                    android:fontFamily="@font/quando_regular"
+                                    android:text="B"
+                                    android:textAlignment="center"
+                                    android:textColor="#c3c3c3"
+                                    android:textSize="18sp"
+                                    android:textStyle="bold" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="50"
+                                android:gravity="center">
+
+                                <TextView
+                                    android:layout_width="36dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginEnd="4dp"
+                                    android:fontFamily="@font/quando_regular"
+                                    android:text="C"
+                                    android:textAlignment="center"
+                                    android:textColor="#c3c3c3"
+                                    android:textSize="18sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="36dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="4dp"
+                                    android:fontFamily="@font/quando_regular"
+                                    android:text="D"
+                                    android:textAlignment="center"
+                                    android:textColor="#c3c3c3"
+                                    android:textSize="18sp"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:layout_weight="100"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="50"
+                                android:gravity="center">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginEnd="16dp"
+                                    android:fontFamily="@font/quando_regular"
+                                    android:text="1"
+                                    android:textColor="#c3c3c3"
+                                    android:textSize="18sp"
+                                    android:textStyle="bold" />
+
+                                <ImageView
+                                    android:id="@+id/seat1"
+                                    android:layout_width="36dp"
+                                    android:layout_height="36dp"
+                                    android:layout_marginEnd="4dp"
+                                    android:src="@drawable/booked_img" />
+
+                                <ImageView
+                                    android:id="@+id/seat2"
+                                    android:layout_width="36dp"
+                                    android:layout_height="36dp"
+                                    android:layout_marginStart="4dp"
+                                    android:src="@drawable/available_img" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="50"
+                                android:gravity="center">
+
+                                <ImageView
+                                    android:id="@+id/seat3"
+                                    android:layout_width="36dp"
+                                    android:layout_height="36dp"
+                                    android:layout_marginEnd="4dp"
+                                    android:src="@drawable/booked_img" />
+
+                                <ImageView
+                                    android:id="@+id/seat4"
+                                    android:layout_width="36dp"
+                                    android:layout_height="36dp"
+                                    android:layout_marginStart="4dp"
+                                    android:src="@drawable/available_img" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:layout_weight="100"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="50"
+                                android:gravity="center"
+                                tools:ignore="NestedWeights">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginEnd="16dp"
+                                    android:fontFamily="@font/quando_regular"
+                                    android:text="2"
+                                    android:textColor="#c3c3c3"
+                                    android:textSize="18sp"
+                                    android:textStyle="bold" />
+
+                                <ImageView
+                                    android:id="@+id/seat5"
+                                    android:layout_width="36dp"
+                                    android:layout_height="36dp"
+                                    android:layout_marginEnd="4dp"
+                                    android:src="@drawable/available_img" />
+
+                                <ImageView
+                                    android:id="@+id/seat6"
+                                    android:layout_width="36dp"
+                                    android:layout_height="36dp"
+                                    android:layout_marginStart="4dp"
+                                    android:src="@drawable/booked_img" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="50"
+                                android:gravity="center">
+
+                                <ImageView
+                                    android:id="@+id/seat7"
+                                    android:layout_width="36dp"
+                                    android:layout_height="36dp"
+                                    android:layout_marginEnd="4dp"
+                                    android:src="@drawable/booked_img" />
+
+                                <ImageView
+                                    android:id="@+id/seat8"
+                                    android:layout_width="36dp"
+                                    android:layout_height="36dp"
+                                    android:layout_marginStart="4dp"
+                                    android:src="@drawable/available_img" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:layout_weight="100"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="50"
+                                android:gravity="center">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginEnd="16dp"
+                                    android:fontFamily="@font/quando_regular"
+                                    android:text="3"
+                                    android:textColor="#c3c3c3"
+                                    android:textSize="18sp"
+                                    android:textStyle="bold" />
+
+                                <ImageView
+                                    android:id="@+id/seat9"
+                                    android:layout_width="36dp"
+                                    android:layout_height="36dp"
+                                    android:layout_marginEnd="4dp"
+                                    android:src="@drawable/available_img" />
+
+                                <ImageView
+                                    android:id="@+id/seat10"
+                                    android:layout_width="36dp"
+                                    android:layout_height="36dp"
+                                    android:layout_marginStart="4dp"
+                                    android:src="@drawable/available_img" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="50"
+                                android:gravity="center">
+
+                                <ImageView
+                                    android:id="@+id/seat11"
+                                    android:layout_width="36dp"
+                                    android:layout_height="36dp"
+                                    android:layout_marginEnd="4dp"
+                                    android:src="@drawable/available_img" />
+
+                                <ImageView
+                                    android:id="@+id/seat12"
+                                    android:layout_width="36dp"
+                                    android:layout_height="36dp"
+                                    android:layout_marginStart="4dp"
+                                    android:src="@drawable/booked_img" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:layout_weight="100"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="50"
+                                android:gravity="center">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginEnd="16dp"
+                                    android:fontFamily="@font/quando_regular"
+                                    android:text="4"
+                                    android:textColor="#c3c3c3"
+                                    android:textSize="18sp"
+                                    android:textStyle="bold" />
+
+                                <ImageView
+                                    android:id="@+id/seat13"
+                                    android:layout_width="36dp"
+                                    android:layout_height="36dp"
+                                    android:layout_marginEnd="4dp"
+                                    android:src="@drawable/available_img" />
+
+                                <ImageView
+                                    android:id="@+id/seat14"
+                                    android:layout_width="36dp"
+                                    android:layout_height="36dp"
+                                    android:layout_marginStart="4dp"
+                                    android:src="@drawable/booked_img" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="50"
+                                android:gravity="center">
+
+                                <ImageView
+                                    android:id="@+id/seat15"
+                                    android:layout_width="36dp"
+                                    android:layout_height="36dp"
+                                    android:layout_marginEnd="4dp"
+                                    android:src="@drawable/available_img" />
+
+                                <ImageView
+                                    android:id="@+id/seat16"
+                                    android:layout_width="36dp"
+                                    android:layout_height="36dp"
+                                    android:layout_marginStart="4dp"
+                                    android:src="@drawable/available_img" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:layout_weight="100"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="50"
+                                android:gravity="center">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginEnd="16dp"
+                                    android:fontFamily="@font/quando_regular"
+                                    android:text="5"
+                                    android:textColor="#c3c3c3"
+                                    android:textSize="18sp"
+                                    android:textStyle="bold" />
+
+                                <ImageView
+                                    android:id="@+id/seat17"
+                                    android:layout_width="36dp"
+                                    android:layout_height="36dp"
+                                    android:layout_marginEnd="4dp"
+                                    android:src="@drawable/booked_img" />
+
+                                <ImageView
+                                    android:id="@+id/seat18"
+                                    android:layout_width="36dp"
+                                    android:layout_height="36dp"
+                                    android:layout_marginStart="4dp"
+                                    android:src="@drawable/booked_img" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="50"
+                                android:gravity="center">
+
+                                <ImageView
+                                    android:id="@+id/seat19"
+                                    android:layout_width="36dp"
+                                    android:layout_height="36dp"
+                                    android:layout_marginEnd="4dp"
+                                    android:src="@drawable/your_seat_img" />
+
+                                <ImageView
+                                    android:id="@+id/seat20"
+                                    android:layout_width="36dp"
+                                    android:layout_height="36dp"
+                                    android:layout_marginStart="4dp"
+                                    android:src="@drawable/available_img" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:layout_weight="100"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="50"
+                                android:gravity="center">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginEnd="16dp"
+                                    android:fontFamily="@font/quando_regular"
+                                    android:text="6"
+                                    android:textColor="#c3c3c3"
+                                    android:textSize="18sp"
+                                    android:textStyle="bold" />
+
+                                <ImageView
+                                    android:id="@+id/seat21"
+                                    android:layout_width="36dp"
+                                    android:layout_height="36dp"
+                                    android:layout_marginEnd="4dp"
+                                    android:src="@drawable/available_img" />
+
+                                <ImageView
+                                    android:id="@+id/seat22"
+                                    android:layout_width="36dp"
+                                    android:layout_height="36dp"
+                                    android:layout_marginStart="4dp"
+                                    android:src="@drawable/available_img" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="50"
+                                android:gravity="center">
+
+                                <ImageView
+                                    android:id="@+id/seat23"
+                                    android:layout_width="36dp"
+                                    android:layout_height="36dp"
+                                    android:layout_marginEnd="4dp"
+                                    android:src="@drawable/booked_img" />
+
+                                <ImageView
+                                    android:id="@+id/seat24"
+                                    android:layout_width="36dp"
+                                    android:layout_height="36dp"
+                                    android:layout_marginStart="4dp"
+                                    android:src="@drawable/available_img" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:layout_weight="100"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="50"
+                                android:gravity="center">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginEnd="16dp"
+                                    android:fontFamily="@font/quando_regular"
+                                    android:text="7"
+                                    android:textColor="#c3c3c3"
+                                    android:textSize="18sp"
+                                    android:textStyle="bold" />
+
+                                <ImageView
+                                    android:id="@+id/seat25"
+                                    android:layout_width="36dp"
+                                    android:layout_height="36dp"
+                                    android:layout_marginEnd="4dp"
+                                    android:src="@drawable/booked_img" />
+
+                                <ImageView
+                                    android:id="@+id/seat26"
+                                    android:layout_width="36dp"
+                                    android:layout_height="36dp"
+                                    android:layout_marginStart="4dp"
+                                    android:src="@drawable/available_img" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="50"
+                                android:gravity="center">
+
+                                <ImageView
+                                    android:id="@+id/seat27"
+                                    android:layout_width="36dp"
+                                    android:layout_height="36dp"
+                                    android:layout_marginEnd="4dp"
+                                    android:src="@drawable/available_img" />
+
+                                <ImageView
+                                    android:id="@+id/seat28"
+                                    android:layout_width="36dp"
+                                    android:layout_height="36dp"
+                                    android:layout_marginStart="4dp"
+                                    android:src="@drawable/booked_img" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:layout_weight="100"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="50"
+                                android:gravity="center">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginEnd="16dp"
+                                    android:fontFamily="@font/quando_regular"
+                                    android:text="8"
+                                    android:textColor="#c3c3c3"
+                                    android:textSize="18sp"
+                                    android:textStyle="bold" />
+
+                                <ImageView
+                                    android:id="@+id/seat29"
+                                    android:layout_width="36dp"
+                                    android:layout_height="36dp"
+                                    android:layout_marginEnd="4dp"
+                                    android:src="@drawable/available_img" />
+
+                                <ImageView
+                                    android:id="@+id/seat30"
+                                    android:layout_width="36dp"
+                                    android:layout_height="36dp"
+                                    android:layout_marginStart="4dp"
+                                    android:src="@drawable/available_img" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="50"
+                                android:gravity="center">
+
+                                <ImageView
+                                    android:id="@+id/seat31"
+                                    android:layout_width="36dp"
+                                    android:layout_height="36dp"
+                                    android:layout_marginEnd="4dp"
+                                    android:src="@drawable/booked_img" />
+
+                                <ImageView
+                                    android:id="@+id/seat32"
+                                    android:layout_width="36dp"
+                                    android:layout_height="36dp"
+                                    android:layout_marginStart="4dp"
+                                    android:src="@drawable/booked_img" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:layout_weight="100"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="50"
+                                android:gravity="center">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginEnd="16dp"
+                                    android:fontFamily="@font/quando_regular"
+                                    android:text="9"
+                                    android:textColor="#c3c3c3"
+                                    android:textSize="18sp"
+                                    android:textStyle="bold" />
+
+                                <ImageView
+                                    android:id="@+id/seat33"
+                                    android:layout_width="36dp"
+                                    android:layout_height="36dp"
+                                    android:layout_marginEnd="4dp"
+                                    android:src="@drawable/booked_img" />
+
+                                <ImageView
+                                    android:id="@+id/seat34"
+                                    android:layout_width="36dp"
+                                    android:layout_height="36dp"
+                                    android:layout_marginStart="4dp"
+                                    android:src="@drawable/available_img" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="50"
+                                android:gravity="center">
+
+                                <ImageView
+                                    android:id="@+id/seat35"
+                                    android:layout_width="36dp"
+                                    android:layout_height="36dp"
+                                    android:layout_marginEnd="4dp"
+                                    android:src="@drawable/booked_img" />
+
+                                <ImageView
+                                    android:id="@+id/seat36"
+                                    android:layout_width="36dp"
+                                    android:layout_height="36dp"
+                                    android:layout_marginStart="4dp"
+                                    android:src="@drawable/available_img" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardViewBottom"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:clickable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    app:cardCornerRadius="4dp"
+                    app:cardUseCompatPadding="true"
+                    app:contentPadding="6dp"
+                    android:focusable="true">
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/seatselectNextbutton"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:backgroundTint="@color/purple"
+                            android:text="Next"
+                            android:theme="@style/Button"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            android:fontFamily="@font/quando_regular"
+                            android:textAllCaps="false"
+                            />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+        </ScrollView>
+
+
+
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

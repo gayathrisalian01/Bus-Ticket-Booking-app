@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="spinner_items">
+        <item>Udupi</item>
+        <item>Bengaluru</item>
+        <item>Mumbai</item>
+        <item>Pune</item>
+        <item>Chennai</item>
+        <item>Kannur</item>
+        <item>Kochi</item>
+        <item>Mangalore</item>
+        <item>Delhi</item>
+        <item>Hyderabad</item>
+        <item>Selam</item>
+        <item>Mysore</item>
+        <item>Ooty</item>
+        <item>Goa</item>
+        <item>Coorg</item>
+        <item>Chikkamagaluru</item>
+        <item>Mandya</item>
+        <item>Bihar</item>
+        <item>Agra</item>
+        <item>Kolkata</item>
+        <item>Hosur</item>
+        <item>Ahmedabad</item>
+        <item>Suratkal</item>
+        <item>Chandigarh</item>
+        <item>Indore</item>
+        <item>Jaipur</item>
+        <item>Patna</item>
+        <item>Jalandar</item>
+        <item>Trivandrum</item>
+        <item>Dehradun</item>
+    </string-array>
+
+</resources>
